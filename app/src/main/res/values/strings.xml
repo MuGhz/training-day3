@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Day2</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="default_menu_label">Default Label</string>
+    <string name="default_menu_desc">This is default menu description</string>
+
+    <string name="button_login">Log Me In</string>
+
+    <string name="api_url">https://jsonplaceholder.typicode.com</string>
+</resources>
