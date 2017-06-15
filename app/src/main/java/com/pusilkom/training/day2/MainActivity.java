@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -43,17 +44,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ListView menuList = (ListView) findViewById(R.id.menu_list);
-        String jsonMenu = getIntent().getStringExtra("myMenu");
-        List<ListMenuItem> myMenu = new Gson().fromJson(jsonMenu, new TypeToken<List<ListMenuItem>>(){}.getType());
-        ListAdapter adapter = new ListMenuAdapter(this, R.layout.list_layout_menu, myMenu);
-        menuList.setAdapter(adapter);
-        menuList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//        ListView menuList = (ListView) findViewById(R.id.menu_list);
+//        String jsonMenu = getIntent().getStringExtra("myMenu");
+//        List<ListMenuItem> myMenu = new Gson().fromJson(jsonMenu, new TypeToken<List<ListMenuItem>>(){}.getType());
+//        ListAdapter adapter = new ListMenuAdapter(this, R.layout.list_layout_menu, myMenu);
+//        menuList.setAdapter(adapter);
+//        menuList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//
+//            }
+//        });
 
-            }
-        });
+        TextView resp = (TextView) findViewById(R.id.backend_response);
+        resp.setText(getIntent().getStringExtra("myRepo"));
     }
 
     @Override

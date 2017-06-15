@@ -8,11 +8,16 @@
     tools:context="com.pusilkom.training.day2.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <android.support.v7.widget.ListViewCompat
-        android:id="@+id/menu_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <!--<android.support.v7.widget.ListViewCompat-->
+        <!--android:id="@+id/menu_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
 
-    </android.support.v7.widget.ListViewCompat>
+    <!--</android.support.v7.widget.ListViewCompat>-->
+
+    <TextView
+        android:id="@+id/backend_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </android.support.constraint.ConstraintLayout>
